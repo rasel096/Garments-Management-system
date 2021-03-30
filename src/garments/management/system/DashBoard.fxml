@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="garments.management.system.DashBoardController">
+    <stylesheets>
+        <URL value="@dashboard.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="650.0" prefWidth="1000.0" styleClass="right-pane" stylesheets="@dashboard.css">
+         <children>
+            <Pane prefHeight="650.0" prefWidth="300.0" styleClass="left-pane" stylesheets="@dashboard.css">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="400.0" layoutX="75.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@bags-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="16.0" layoutY="147.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="268.0" styleClass="textfield" stylesheets="@style.css" text="Dashboard">
+                     <font>
+                        <Font size="32.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="ARCHIVE" layoutX="28.0" layoutY="201.0" size="32" text="" />
+                  <Button layoutX="21.0" layoutY="218.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="268.0" styleClass="textfield" text="Best Selling">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                     <stylesheets>
+                        <URL value="@dashboard.css" />
+                        <URL value="@style.css" />
+                     </stylesheets></Button>
+                  <FontAwesomeIconView glyphName="HEART" layoutX="27.0" layoutY="266.0" size="32" text="" />
+                  <Button layoutX="21.0" layoutY="284.0" mnemonicParsing="false" onAction="#gotomakeorderpage" prefHeight="63.0" prefWidth="268.0" styleClass="textfield" stylesheets="@style.css" text="Make Order">
+                     <font>
+                        <Font size="32.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="MONEY" layoutX="27.0" layoutY="330.0" size="32" text="" />
+                  <Button layoutX="21.0" layoutY="350.0" mnemonicParsing="false" onAction="#gotomyorderspage" prefHeight="49.0" prefWidth="268.0" styleClass="textfield" stylesheets="@style.css" text="My Orders">
+                     <font>
+                        <Font size="32.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="CLIPBOARD" layoutX="39.0" layoutY="406.0" size="32" text="" />
+                  <Button layoutX="21.0" layoutY="420.0" mnemonicParsing="false" onAction="#gotouserprofilepage" prefHeight="49.0" prefWidth="268.0" styleClass="textfield" stylesheets="@style.css" text="User Profile">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="USER" layoutX="30.0" layoutY="465.0" size="32" text="" />
+                  <Button layoutX="21.0" layoutY="491.0" mnemonicParsing="false" onAction="#gotomycartpage" prefHeight="63.0" prefWidth="268.0" styleClass="textfield" stylesheets="@style.css" text="My cart" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font></Button>
+                  <ImageView fitHeight="49.0" fitWidth="62.0" layoutX="35.0" layoutY="493.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cart.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="300.0" layoutY="13.0" prefHeight="63.0" prefWidth="685.0" styleClass="title" stylesheets="@dashboard.css">
+               <children>
+                  <Label layoutX="40.0" layoutY="8.0" text="Welcome to MNR Garments !">
+                     <font>
+                        <Font name="Times New Roman Bold" size="44.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ScrollPane layoutX="299.0" layoutY="83.0" prefHeight="568.0" prefWidth="701.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="700.0" style="-fx-background-color: pink;">
+                     <children>
+                        <ImageView fitHeight="207.0" fitWidth="212.0" layoutX="20.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="60.0">
+                           <image>
+                              <Image url="@pichalfshirt.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="199.0" fitWidth="224.0" layoutX="24.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="344.0" AnchorPane.topAnchor="60.0">
+                           <image>
+                              <Image url="@picfullshirt.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="206.0" fitWidth="212.0" layoutX="60.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="471.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="323.0" />
+                        <ImageView fitHeight="205.0" fitWidth="212.0" layoutX="344.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="344.0" AnchorPane.topAnchor="323.0" />
+                        <ImageView fitHeight="207.0" fitWidth="212.0" layoutX="60.0" layoutY="530.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@fashion.jpg" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

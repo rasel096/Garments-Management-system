@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: #2F2B43;" stylesheets="@style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="garments.management.system.PrintingBillController">
+   <children>
+      <TableView layoutX="149.0" layoutY="51.0" prefHeight="392.0" prefWidth="549.0">
+        <columns>
+          <TableColumn prefWidth="92.0" text="product name" />
+          <TableColumn prefWidth="70.0" text="size" />
+            <TableColumn prefWidth="98.0" text="color" />
+            <TableColumn prefWidth="107.0" text="quantity" />
+            <TableColumn prefWidth="83.0" text="price" />
+            <TableColumn prefWidth="98.0" text="total price" />
+        </columns>
+      </TableView>
+      <Button layoutX="349.0" layoutY="533.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="150.0" text="Print">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
